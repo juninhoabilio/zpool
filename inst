@@ -14,7 +14,7 @@ fi
 
 core=$2
 wallet=$1
-carteira_exemplo=U9i2KZHjV8dWff9HKurYYRkckLueYK96Qh4p1EDoEvdo8mpg
+carteira_exemplo=193QTmS5AreK86YMct7xR5aYKFvgJvW8m7
 if [ "$1" = ""  ]
 then
 echo "			\033[41;1;37m Minerar BITCOIN  $versao \033[0m "				
