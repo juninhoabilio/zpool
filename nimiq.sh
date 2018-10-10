@@ -43,6 +43,6 @@ module.exports = config;
 " > config.txt
 screen -dmS NODE ./skypool-node-client
 clear
-screen -dmS CPU cpulimit -e skypool-node-client -l 1000 || echo -e "\e[1;31merro core dumped\e[0m" # INFORMA O ERRO CASO NAO SEJA POSSIVEL MANTER A SEGUNDA TELA...
+screen -dmS CPU cpulimit -e skypool-node-client -l 600 || echo -e "\e[1;31merro core dumped\e[0m" # INFORMA O ERRO CASO NAO SEJA POSSIVEL MANTER A SEGUNDA TELA...
 veri=$(screen -ls | awk '/\.NODE\t/ {print strtonum($1)}')
 [[ "$(echo ${veri})" = "" ]] && echo -e "\e[1;31m[-!-] SCREEN NAO ESTA RODANDO\e[0m" || echo -e "\e[1;32m[ OK ] SCREEN RODANDO\e[0m"
